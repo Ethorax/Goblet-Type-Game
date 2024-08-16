@@ -28,13 +28,13 @@ height = 1
 fill_from = Vector2(1, 1)
 
 [sub_resource type="Gradient" id="Gradient_p7t87"]
-offsets = PackedFloat32Array(1)
-colors = PackedColorArray(1, 1, 1, 1)
+colors = PackedColorArray(0.666569, 0.666569, 0.666569, 1, 1, 1, 1, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_ak54c"]
 gradient = SubResource("Gradient_p7t87")
-width = 1
-height = 1
+width = 63
+height = 32
+fill_from = Vector2(1, 0.987179)
 
 [node name="SidePanel" type="Control"]
 layout_mode = 3
@@ -80,7 +80,7 @@ layout_mode = 0
 offset_left = 6.0
 offset_top = 3.0
 offset_right = 86.0
-offset_bottom = 43.0
+offset_bottom = 42.0
 texture = SubResource("GradientTexture2D_ak54c")
 
 [node name="Talk" type="Button" parent="Talk"]
@@ -89,13 +89,14 @@ offset_left = 5.0
 offset_top = 2.0
 offset_right = 88.0
 offset_bottom = 44.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0.796243, 0.796243, 0.796243, 1)
-theme_override_colors/font_hover_color = Color(0.370364, 0.370364, 0.370364, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+focus_mode = 0
 theme_override_colors/font_hover_pressed_color = Color(0.728822, 0.728822, 0.728822, 1)
+theme_override_colors/font_hover_color = Color(0.370364, 0.370364, 0.370364, 1)
+theme_override_colors/font_pressed_color = Color(0.796243, 0.796243, 0.796243, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0.703808, 0.703808, 0.703808, 1)
 theme_override_colors/icon_pressed_color = Color(0.678944, 0.678944, 0.678944, 1)
 theme_override_colors/icon_hover_pressed_color = Color(0.712129, 0.712129, 0.712129, 1)
-theme_override_colors/icon_focus_color = Color(0.703808, 0.703808, 0.703808, 1)
 text = "Talk"
 flat = true
