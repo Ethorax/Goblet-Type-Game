@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://cphrbdf5wakna"]
+
+[ext_resource type="PackedScene" uid="uid://rw7cqeomf4t0" path="res://npc.tscn" id="1_w1oov"]
+[ext_resource type="Texture2D" uid="uid://qxdtlovm04nm" path="res://wizardcharacter.png" id="2_q1aho"]
+
+[sub_resource type="Animation" id="Animation_dksdh"]
+resource_name = "Idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_lm17t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p2rfo"]
+_data = {
+"Idle": SubResource("Animation_dksdh"),
+"RESET": SubResource("Animation_lm17t")
+}
+
+[node name="NPC" instance=ExtResource("1_w1oov")]
+text = "[center] ABRA KA-DAB BRUH!"
+
+[node name="Sprite3D" parent="." index="0"]
+modulate = Color(0.657583, 1, 0.975098, 1)
+texture = ExtResource("2_q1aho")
+hframes = 2
+
+[node name="AnimationPlayer" parent="." index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_p2rfo")
+}

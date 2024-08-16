@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8u1ecpvir6yh"]
+
+[ext_resource type="Script" path="res://Enemy.gd" id="1_ji4bj"]
+[ext_resource type="Texture2D" uid="uid://c175khjlc47ny" path="res://icon.svg" id="2_tmhc8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_7dh28"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xyhmp"]
+size = Vector3(3, 3, 3)
+
+[node name="Enemy" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_ji4bj")
+
+[node name="CharacterBody3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_7dh28")
+
+[node name="Alive" type="Sprite3D" parent="."]
+billboard = 2
+texture = ExtResource("2_tmhc8")
+
+[node name="Area3D" type="Area3D" parent="Alive"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Alive/Area3D"]
+shape = SubResource("BoxShape3D_xyhmp")
+
+[node name="Dead" type="Sprite3D" parent="."]
+visible = false
+modulate = Color(0.212305, 0.212305, 0.212305, 1)
+billboard = 2
+texture = ExtResource("2_tmhc8")
+
+[node name="AttackTimer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="Alive/Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Alive/Area3D" to="." method="_on_area_3d_body_exited"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]

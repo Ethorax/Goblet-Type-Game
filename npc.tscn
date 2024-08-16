@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://rw7cqeomf4t0"]
+
+[ext_resource type="Script" path="res://NPC.gd" id="1_i508s"]
+[ext_resource type="Texture2D" uid="uid://ca3ref2ad3bx2" path="res://DonutMan.png" id="2_rjr36"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2gx1n"]
+
+[node name="NPC" type="CharacterBody3D" groups=["NPC"]]
+script = ExtResource("1_i508s")
+text = "[center] I am the donut man, don't look too long!"
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.212152, 0)
+modulate = Color(0.998495, 0.778668, 0.659018, 1)
+pixel_size = 0.0065
+billboard = 2
+shaded = true
+texture = ExtResource("2_rjr36")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_2gx1n")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

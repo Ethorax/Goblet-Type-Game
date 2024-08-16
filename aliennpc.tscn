@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://bmccexyyd0nua"]
+
+[ext_resource type="PackedScene" uid="uid://rw7cqeomf4t0" path="res://npc.tscn" id="1_321fx"]
+[ext_resource type="Texture2D" uid="uid://bc4eoiaok6kmj" path="res://Alien.png" id="2_rrp5h"]
+
+[sub_resource type="Animation" id="Animation_vksc4"]
+resource_name = "Idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 3, 4, 5, 6, 7, 7]
+}
+
+[sub_resource type="Animation" id="Animation_jp84d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jj2al"]
+_data = {
+"Idle": SubResource("Animation_vksc4"),
+"RESET": SubResource("Animation_jp84d")
+}
+
+[node name="NPC" instance=ExtResource("1_321fx")]
+text = "[center] Bleep, bleep blorp blorp bleep."
+
+[node name="Sprite3D" parent="." index="0"]
+modulate = Color(0.599047, 0.999222, 0.670339, 1)
+texture = ExtResource("2_rrp5h")
+hframes = 8
+
+[node name="AnimationPlayer" parent="." index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_jj2al")
+}

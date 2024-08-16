@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://cclokw50ayy15"]
+
+[ext_resource type="Script" path="res://Burst Enemy.gd" id="1_ndm6a"]
+[ext_resource type="Texture2D" uid="uid://c175khjlc47ny" path="res://icon.svg" id="2_iro2n"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wb126"]
+
+[node name="Burst Enemy" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_ndm6a")
+
+[node name="CharacterBody3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_wb126")
+
+[node name="Alive" type="Sprite3D" parent="."]
+modulate = Color(1, 0.530745, 0.985921, 1)
+billboard = 2
+texture = ExtResource("2_iro2n")
+
+[node name="Dead" type="Sprite3D" parent="."]
+visible = false
+modulate = Color(0.212305, 0.212305, 0.212305, 1)
+billboard = 2
+texture = ExtResource("2_iro2n")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

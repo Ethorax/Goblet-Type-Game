@@ -1,0 +1,101 @@
+[gd_scene load_steps=10 format=3 uid="uid://bmsp1rolao7eu"]
+
+[sub_resource type="Gradient" id="Gradient_5o014"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_jfgpr"]
+gradient = SubResource("Gradient_5o014")
+fill_from = Vector2(1, 0)
+
+[sub_resource type="Theme" id="Theme_r5oa2"]
+
+[sub_resource type="Gradient" id="Gradient_eroiw"]
+offsets = PackedFloat32Array(0, 0.435065, 1)
+colors = PackedColorArray(0.473976, 0.473976, 0.473976, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_b8bpy"]
+gradient = SubResource("Gradient_eroiw")
+fill_from = Vector2(1, 1)
+fill_to = Vector2(1, 0.729358)
+
+[sub_resource type="Gradient" id="Gradient_uvs2x"]
+offsets = PackedFloat32Array(0.123377, 0.87013)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4pr0b"]
+gradient = SubResource("Gradient_uvs2x")
+width = 1
+height = 1
+fill_from = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="Gradient_p7t87"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ak54c"]
+gradient = SubResource("Gradient_p7t87")
+width = 1
+height = 1
+
+[node name="SidePanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 435.0
+offset_bottom = 649.0
+texture = SubResource("GradientTexture2D_jfgpr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 422.0
+offset_bottom = 636.0
+theme = SubResource("Theme_r5oa2")
+texture = SubResource("GradientTexture2D_b8bpy")
+
+[node name="Talk" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 170.0
+offset_top = 143.0
+offset_right = 266.0
+offset_bottom = 195.0
+
+[node name="TextureRect" type="TextureRect" parent="Talk"]
+custom_minimum_size = Vector2(88, 44)
+layout_mode = 0
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 90.0
+offset_bottom = 45.0
+texture = SubResource("GradientTexture2D_4pr0b")
+
+[node name="TextureRect2" type="TextureRect" parent="Talk"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 86.0
+offset_bottom = 43.0
+texture = SubResource("GradientTexture2D_ak54c")
+
+[node name="Talk" type="Button" parent="Talk"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 2.0
+offset_right = 88.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.796243, 0.796243, 0.796243, 1)
+theme_override_colors/font_hover_color = Color(0.370364, 0.370364, 0.370364, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.728822, 0.728822, 0.728822, 1)
+theme_override_colors/icon_pressed_color = Color(0.678944, 0.678944, 0.678944, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.712129, 0.712129, 0.712129, 1)
+theme_override_colors/icon_focus_color = Color(0.703808, 0.703808, 0.703808, 1)
+text = "Talk"
+flat = true
