@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coxgoygxkdwfx"
-path.s3tc="res://.godot/imported/floor.png-d43f03cb7a8f42941311ed90ed2021b9.s3tc.ctex"
+uid="uid://c175khjlc47ny"
+path.s3tc="res://.godot/imported/icon.svg-355b756520897b24eafef4df9666f862.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://floor.png"
-dest_files=["res://.godot/imported/floor.png-d43f03cb7a8f42941311ed90ed2021b9.s3tc.ctex"]
+source_file="res://Graphics/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-355b756520897b24eafef4df9666f862.s3tc.ctex"]
 
 [params]
 
@@ -33,3 +33,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=0
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

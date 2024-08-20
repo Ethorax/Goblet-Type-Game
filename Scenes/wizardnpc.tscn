@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cphrbdf5wakna"]
 
-[ext_resource type="PackedScene" uid="uid://rw7cqeomf4t0" path="res://npc.tscn" id="1_w1oov"]
-[ext_resource type="Texture2D" uid="uid://qxdtlovm04nm" path="res://wizardcharacter.png" id="2_q1aho"]
+[ext_resource type="PackedScene" uid="uid://rw7cqeomf4t0" path="res://Scenes/npc.tscn" id="1_w1oov"]
+[ext_resource type="Texture2D" uid="uid://qxdtlovm04nm" path="res://Graphics/wizardcharacter.png" id="2_q1aho"]
 
 [sub_resource type="Animation" id="Animation_dksdh"]
 resource_name = "Idle"

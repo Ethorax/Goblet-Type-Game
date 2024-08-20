@@ -1,15 +1,15 @@
 [gd_scene load_steps=21 format=3 uid="uid://smaxp6gk4ctp"]
 
-[ext_resource type="Texture2D" uid="uid://coxgoygxkdwfx" path="res://floor.png" id="1_flehb"]
-[ext_resource type="Texture2D" uid="uid://bm1su8iy7tpoe" path="res://boards.png" id="2_ct8fr"]
-[ext_resource type="Texture2D" uid="uid://yn4yy7aew5pe" path="res://bricks.png" id="3_qjnq5"]
-[ext_resource type="Texture2D" uid="uid://c1gyb4wgynmtd" path="res://checkered.png" id="4_topuh"]
+[ext_resource type="Texture2D" uid="uid://coxgoygxkdwfx" path="res://Graphics/floor.png" id="1_2s5h7"]
+[ext_resource type="Texture2D" uid="uid://bm1su8iy7tpoe" path="res://Graphics/boards.png" id="2_ll3ly"]
+[ext_resource type="Texture2D" uid="uid://yn4yy7aew5pe" path="res://Graphics/bricks.png" id="3_gf2ej"]
+[ext_resource type="Texture2D" uid="uid://c1gyb4wgynmtd" path="res://Graphics/checkered.png" id="4_vhrbv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ygowe"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k3ih1"]
 albedo_color = Color(0.54099, 0.54099, 0.54099, 1)
-albedo_texture = ExtResource("1_flehb")
+albedo_texture = ExtResource("1_2s5h7")
 uv1_scale = Vector3(2, 2, 2)
 texture_filter = 0
 
@@ -21,7 +21,7 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cmvet"]
 albedo_color = Color(0.946503, 0.717255, 0.357363, 1)
-albedo_texture = ExtResource("2_ct8fr")
+albedo_texture = ExtResource("2_ll3ly")
 uv1_scale = Vector3(2, 2, 2)
 texture_filter = 0
 
@@ -32,7 +32,7 @@ material = SubResource("StandardMaterial3D_cmvet")
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcj1c"]
-albedo_texture = ExtResource("3_qjnq5")
+albedo_texture = ExtResource("3_gf2ej")
 uv1_scale = Vector3(2, 2, 2)
 texture_filter = 0
 
@@ -43,7 +43,7 @@ material = SubResource("StandardMaterial3D_jcj1c")
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4jo5j"]
-albedo_texture = ExtResource("3_qjnq5")
+albedo_texture = ExtResource("3_gf2ej")
 uv1_scale = Vector3(2, 2, 2)
 texture_filter = 0
 
@@ -55,7 +55,7 @@ left_to_right = 1.0
 data = PackedVector3Array(0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ed8y"]
-albedo_texture = ExtResource("4_topuh")
+albedo_texture = ExtResource("4_vhrbv")
 uv1_scale = Vector3(2.245, 1.995, 2.755)
 
 [sub_resource type="BoxMesh" id="BoxMesh_8l5dl"]

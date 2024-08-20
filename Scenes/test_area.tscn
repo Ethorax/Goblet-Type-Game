@@ -1,14 +1,14 @@
 [gd_scene load_steps=17 format=3 uid="uid://cwuiwkh6ae5nw"]
 
-[ext_resource type="Texture2D" uid="uid://coxgoygxkdwfx" path="res://floor.png" id="1_cccgx"]
-[ext_resource type="Texture2D" uid="uid://qxil5so0swc1" path="res://bigbricks.png" id="3_ot4sg"]
-[ext_resource type="PackedScene" uid="uid://rw7cqeomf4t0" path="res://npc.tscn" id="4_ich8d"]
-[ext_resource type="PackedScene" uid="uid://cjam48cr7useg" path="res://display.tscn" id="4_rlbc4"]
-[ext_resource type="PackedScene" uid="uid://c8u1ecpvir6yh" path="res://enemy.tscn" id="5_h8yq4"]
-[ext_resource type="PackedScene" uid="uid://cclokw50ayy15" path="res://burst_enemy.tscn" id="6_d5c81"]
-[ext_resource type="MeshLibrary" uid="uid://badexttcpns4a" path="res://basicmeshlibrary.tres" id="7_qfkl0"]
-[ext_resource type="PackedScene" uid="uid://bmccexyyd0nua" path="res://aliennpc.tscn" id="8_37ndq"]
-[ext_resource type="PackedScene" uid="uid://cphrbdf5wakna" path="res://wizardnpc.tscn" id="9_yxssq"]
+[ext_resource type="Texture2D" uid="uid://coxgoygxkdwfx" path="res://Graphics/floor.png" id="1_cccgx"]
+[ext_resource type="Texture2D" uid="uid://qxil5so0swc1" path="res://Graphics/bigbricks.png" id="3_ot4sg"]
+[ext_resource type="PackedScene" uid="uid://rw7cqeomf4t0" path="res://Scenes/npc.tscn" id="4_ich8d"]
+[ext_resource type="PackedScene" uid="uid://cjam48cr7useg" path="res://Scenes/display.tscn" id="4_rlbc4"]
+[ext_resource type="PackedScene" uid="uid://c8u1ecpvir6yh" path="res://Scenes/enemy.tscn" id="5_h8yq4"]
+[ext_resource type="PackedScene" uid="uid://cclokw50ayy15" path="res://Scenes/burst_enemy.tscn" id="6_d5c81"]
+[ext_resource type="MeshLibrary" uid="uid://badexttcpns4a" path="res://Graphics/basicmeshlibrary.tres" id="7_qfkl0"]
+[ext_resource type="PackedScene" uid="uid://bmccexyyd0nua" path="res://Scenes/aliennpc.tscn" id="8_37ndq"]
+[ext_resource type="PackedScene" uid="uid://cphrbdf5wakna" path="res://Scenes/wizardnpc.tscn" id="9_yxssq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rumb3"]
 albedo_color = Color(0.643137, 0.423529, 0.423529, 1)

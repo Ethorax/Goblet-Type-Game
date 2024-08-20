@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cetiah2cwaix1"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_j02hf"]
-[ext_resource type="Texture2D" uid="uid://ccmmbryk1xya3" path="res://applecharacter.png" id="2_m7ghs"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_j02hf"]
+[ext_resource type="Texture2D" uid="uid://ccmmbryk1xya3" path="res://Graphics/applecharacter.png" id="2_m7ghs"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1ggg8"]
 radius = 0.599582

@@ -11,13 +11,13 @@ config_version=5
 [application]
 
 config/name="Goblet Type Game"
-run/main_scene="res://test_area.tscn"
+run/main_scene="res://Scenes/test_area.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Graphics/icon.svg"
 
 [autoload]
 
-Global="*res://global.gd"
+Global="*res://Scripts/global.gd"
 
 [display]
 

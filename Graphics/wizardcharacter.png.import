@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc4eoiaok6kmj"
-path.s3tc="res://.godot/imported/Alien.png-346fc44cb1baf22987fb108f88b8f7c1.s3tc.ctex"
+uid="uid://qxdtlovm04nm"
+path.s3tc="res://.godot/imported/wizardcharacter.png-87f557611c757b7d3d8f0b830ed08efe.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Alien.png"
-dest_files=["res://.godot/imported/Alien.png-346fc44cb1baf22987fb108f88b8f7c1.s3tc.ctex"]
+source_file="res://Graphics/wizardcharacter.png"
+dest_files=["res://.godot/imported/wizardcharacter.png-87f557611c757b7d3d8f0b830ed08efe.s3tc.ctex"]
 
 [params]
 

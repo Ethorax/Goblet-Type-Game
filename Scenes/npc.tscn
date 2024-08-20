@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://rw7cqeomf4t0"]
 
-[ext_resource type="Script" path="res://NPC.gd" id="1_i508s"]
-[ext_resource type="Texture2D" uid="uid://ca3ref2ad3bx2" path="res://DonutMan.png" id="2_rjr36"]
+[ext_resource type="Script" path="res://Scripts/NPC.gd" id="1_i508s"]
+[ext_resource type="Texture2D" uid="uid://ca3ref2ad3bx2" path="res://Graphics/DonutMan.png" id="2_rjr36"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2gx1n"]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bmccexyyd0nua"]
 
-[ext_resource type="PackedScene" uid="uid://rw7cqeomf4t0" path="res://npc.tscn" id="1_321fx"]
-[ext_resource type="Texture2D" uid="uid://bc4eoiaok6kmj" path="res://Alien.png" id="2_rrp5h"]
+[ext_resource type="PackedScene" uid="uid://rw7cqeomf4t0" path="res://Scenes/npc.tscn" id="1_321fx"]
+[ext_resource type="Texture2D" uid="uid://bc4eoiaok6kmj" path="res://Graphics/Alien.png" id="2_rrp5h"]
 
 [sub_resource type="Animation" id="Animation_vksc4"]
 resource_name = "Idle"

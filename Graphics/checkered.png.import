@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca3ref2ad3bx2"
-path.s3tc="res://.godot/imported/DonutMan.png-b4c1d827bd8320c7b8d8c6929bce6005.s3tc.ctex"
+uid="uid://c1gyb4wgynmtd"
+path.s3tc="res://.godot/imported/checkered.png-d910f295b4cc2b9571492492bbd546ba.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://DonutMan.png"
-dest_files=["res://.godot/imported/DonutMan.png-b4c1d827bd8320c7b8d8c6929bce6005.s3tc.ctex"]
+source_file="res://Graphics/checkered.png"
+dest_files=["res://.godot/imported/checkered.png-d910f295b4cc2b9571492492bbd546ba.s3tc.ctex"]
 
 [params]
 

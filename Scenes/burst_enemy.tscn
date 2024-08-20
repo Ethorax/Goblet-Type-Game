@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cclokw50ayy15"]
 
-[ext_resource type="Script" path="res://Burst Enemy.gd" id="1_ndm6a"]
-[ext_resource type="Texture2D" uid="uid://c175khjlc47ny" path="res://icon.svg" id="2_iro2n"]
+[ext_resource type="Script" path="res://Scripts/Burst Enemy.gd" id="1_ndm6a"]
+[ext_resource type="Texture2D" uid="uid://c175khjlc47ny" path="res://Graphics/icon.svg" id="2_iro2n"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wb126"]
 

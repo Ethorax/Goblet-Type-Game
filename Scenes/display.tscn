@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://cjam48cr7useg"]
 
-[ext_resource type="Script" path="res://display.gd" id="1_numw5"]
-[ext_resource type="PackedScene" uid="uid://bmsp1rolao7eu" path="res://side_panel.tscn" id="1_v5g7w"]
-[ext_resource type="PackedScene" uid="uid://cetiah2cwaix1" path="res://player.tscn" id="2_mymdt"]
-[ext_resource type="Texture2D" uid="uid://qn1cnj564okp" path="res://heartcontainer.png" id="4_ujlwh"]
+[ext_resource type="Script" path="res://Scripts/display.gd" id="1_numw5"]
+[ext_resource type="PackedScene" uid="uid://bmsp1rolao7eu" path="res://Scenes/side_panel.tscn" id="1_v5g7w"]
+[ext_resource type="PackedScene" uid="uid://cetiah2cwaix1" path="res://Scenes/player.tscn" id="2_mymdt"]
+[ext_resource type="Texture2D" uid="uid://qn1cnj564okp" path="res://Graphics/heartcontainer.png" id="4_ujlwh"]
 
 [sub_resource type="Gradient" id="Gradient_shmjs"]
 offsets = PackedFloat32Array(0)
